@@ -1,0 +1,32 @@
+REST Client
+
+
+Develop a Python script that will get the current weather data for a particular zip code and then
+print out some of that data in a table. The site OpenWeatherMap provides a simple REST API to
+get weather data. Use the zip code assigned below.
+For the zip code 30144, the output would be:
+
+
+Name: KSU
+Current Temperature: 64.5 degrees Fahrenheit
+Atmospheric Pressure: 992.52 hPa
+Wind Speed 10.6 mph
+Wind Direction 289.5
+Time of Report 2017-03-10 11:13:24
+
+
+To be able to carry out this assignment you will need to register for a free account with
+OpenWeatherMap. You will provide an id (username) when registering. Once you have
+registered, you will receive an APIID, essentially your password for using the service.
+The current weather data API page tells you how to create a request for the current weather at a
+particular zip code. Information on the page tells the structure of the data returned. The How to
+start page tells how to include the APIID and id in a request. Unless you care to convert from
+Kelvin to degrees Fahrenheit and convert from kilometers per hour to miles per hour in your
+script, be sure to request ‘imperial’ units from the server.
+The data you get back will be encoded as JSON. You will need to decode it to access the
+information contained in the response.
+
+
+Use the datetime class in the datetime package from the standard library to convert the time
+stamp included in the data to readable form. The value included in the data is the number of
+seconds since the epoch (standard Unix timestamp). The displaye
